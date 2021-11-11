@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+:root{
+  --marrom: rgb(59, 46, 29);
+  --marromClaro: rgb(191, 133, 20);
+}
+*{
+    font-family: Montserrat, sans-serif;
+}
+footer{
+    margin-top: 200px;
+    background-color: var(--marrom);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 36px;
+}
+footer .infos ul{
+    padding: 5px 45px;
+}
+footer .infos ul li:first-child{
+    margin-right: 15px;
+}
+footer .infos ul li{
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    font-size: 14px;
+}
+footer .infos ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilização dos icones e option */
+
+footer .socials{
+    margin-right: 40px;
+}
+footer .socials i{
+    color: white;
+    font-size: 25px;
+    margin-right: 24px;
+}
+footer .socials .estiloSelect{
+    border-radius: 5px;
+    outline: none;
+    min-height: 40px;
+    height: 45px;
+    padding: 10px;
+}

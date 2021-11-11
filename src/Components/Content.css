@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+:root{
+  --marrom: rgb(59, 46, 29);
+  --marromClaro: rgb(191, 133, 20);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+/* ESTILIZAÇÃO DO SECTION LEFT DO CONTENT.JSX */
+
+.section-left{
+    width: 60%;
+}
+.section-left-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 17px;
+    margin: 0 5%;
+}
+.section-left-banner p{
+    font-size: 14px;
+}
+.section-left-banner .choice a{
+    margin-right: 20px;
+    font-size: 13px;
+    color: var(--marrom);
+    font-weight: bolder;
+}
+.section-left-banner .choice input[type=submit]{
+    padding: 9px 18px;
+    background-color: var(--marrom);
+    color: white;
+    cursor: pointer;
+    font-weight:bolder;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-left h3{
+    margin: 50px 5% 8px 5%;
+}
+.section-left .wrapper > p{
+    margin: 0 5%;
+}
+.section-left .wrapper{
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.section-left .box-container{
+    width: 90%;
+    margin: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section-left .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    flex:1 1 200px;
+    height: 120px;
+    max-width: 190px;
+    position: relative;
+    cursor: pointer;
+}
+.section-left .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-left .box-container .box .content{
+    position: absolute;
+    top: 0px; left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+.section-left .box-container .box .content:hover{
+    background-color: rgba(191, 133, 20, .8);
+}
+.section-left .box-container .box .content p{
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* Estilização do section right do Content.jsx */
+
+.section-right{
+    width: 40%;
+}
+.section-right input{
+    padding: 10px;
+    position: relative;
+    top: -14px;
+}
+.section-right input[type=text]{
+    width: 65%;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #000;
+}
+.section-right input[type=submit]{
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    background-color: var(--marrom);
+    color: white;
+    font-weight: bolder;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+}
+.section-right .informations-and-map{
+    min-height: calc(100vh - 150px);
+    position: sticky;
+    top: 115px;
+    height: fit-content;
+}
+.section-right .informations-and-map .informations{    
+    height: calc(100vh - 150px);
+    z-index: 0;
+    position: relative;
+    outline: none;
+    background-color: #ccc;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+:root{
+  --marrom: rgb(59, 46, 29);
+  --marromClaro: rgb(191, 133, 20);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+header{
+  position: fixed;
+  min-width: 1250px;
+  z-index: 999;
+  background-color:white;
+}
+.headerFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: rgb(0 0 0 / 6%) 0px 4px 4px;
+}
+.headerFlex img{
+  width: 200px;
+  margin: 0 2%;
+}
+.headerFlex a{
+  text-decoration: none;
+  width: 67%;
+  text-align: right;
+  font-weight: 400 bold;
+  font-size: 13px;
+}
+.headerFlex svg{
+  margin-right: 5px;
+  width: 15px;
+}
+.headerFlex a span{
+  color: var(--marromClaro);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.headerFlex .linkLogin{
+  color: black;
+  margin: 0 2%;
+  font-weight: bold;
+  cursor: pointer;
+}
